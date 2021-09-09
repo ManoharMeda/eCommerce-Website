@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Box icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+  <!-- Custom StyleSheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="./css/img-anti-zoom.css"/>
+<title>Sign in</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+.inputfield{
+    padding-top:2rem;
+    justify-content: center;
+    padding: 3rem;
+}
+body{
+  background:#B5EAEA;
+  padding: 0;
+}
+.wrapper{
+  border-radius: 25px;
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  margin: 50px auto;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.125);
+  padding: 30px;
+  box-shadow: 0 0  3rem -1.5rem black;
+}
+
+.wrapper .title{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #fec107;
+  text-transform: uppercase;
+  text-align: center;
+}
+.wrapper .form{
+  width: 100%;
+}
+
+.wrapper .form .inputfield{
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .form .inputfield label{
+   width: 200px;
+   color: #757575;
+   margin-right: 10px;
+  font-size: 14px;
+}
+
+.wrapper .form .inputfield .input,
+.wrapper .form .inputfield .textarea{
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.wrapper .form .inputfield .textarea{
+  width: 100%;
+  height: 125px;
+  resize: none;
+}
+
+.wrapper .form .inputfield .custom_select{
+  position: relative;
+  width: 100%;
+  height: 37px;
+}
+
+.wrapper .form .inputfield .custom_select:before{
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  border: 8px solid;
+  border-color: #d5dbd9 transparent transparent transparent;
+  pointer-events: none;
+}
+
+.wrapper .form .inputfield .custom_select select{
+  -webkit-appearance: none;
+  -moz-appearance:   none;
+  appearance:        none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 1px solid #d5dbd9;
+  border-radius: 3px;
+}
+
+
+.wrapper .form .inputfield .input:focus,
+.wrapper .form .inputfield .textarea:focus,
+.wrapper .form .inputfield .custom_select select:focus{
+  border: 1px solid #fec107;
+}
+
+.wrapper .form .inputfield p{
+   font-size: 14px;
+   color: #757575;
+}
+.wrapper .form .inputfield .check{
+  width: 15px;
+  height: 15px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+.wrapper .form .inputfield .check input[type="checkbox"]{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.wrapper .form .inputfield .check .checkmark{
+  width: 15px;
+  height: 15px;
+  border: 1px solid #fec107;
+  display: block;
+  position: relative;
+}
+.wrapper .form .inputfield .check .checkmark:before{
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  width: 5px;
+  height: 2px;
+  border: 2px solid;
+  border-color: transparent transparent #fff #fff;
+  transform: rotate(-45deg);
+  display: none;
+}
+.wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark{
+  background: #fec107;
+}
+
+.wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before{
+  display: block;
+}
+
+.wrapper .form .inputfield .button{
+  width: 100%;
+   padding: 8px 10px;
+  font-size: 15px; 
+  border: 0px;
+  background:  #fec107;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+  box-shadow: 0 0 10px -2px black;
+}
+
+.wrapper .form .inputfield .button:hover{
+  background: #ffd658;
+}
+
+.wrapper .form .inputfield:last-child{
+  margin-bottom: 0;
+}
+
+@media (max-width:420px) {
+  .wrapper .form .inputfield{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wrapper .form .inputfield label{
+    margin-bottom: 5px;
+  }
+  .wrapper .form .inputfield.terms{
+    flex-direction: row;
+  }
+}
+p{
+  text-align: center;
+}
+
+</style>
+<body>
+  <nav>
+    <a href="index.html" class="logo">LOGO</a>
+    <div class="menu-btn">
+      <div class="menu-btn__lines"></div>
+    </div>
+    <ul id="menu-items" class="menu-items hideTemp">
+      <li><a href="index.html" class="menu-item">Home</a></li>
+      <li>
+        <a href="mens.html" class="menu-item expand-btn hide-second">Mens</a>
+        <a href="#" class="menu-item expand-btn hide-first">Mens</a>
+        <div class="mega-menu expandable">
+          <div class="content">
+            <div class="col">
+              <section>
+                <h2>Featured 1</h2>
+                <ul class="mega-links">
+                  <li><a href="#">Item 1</a></li>
+                  <li><a href="#">Item 2</a></li>
+                  <li><a href="#">Item 3</a></li>
+                  <li><a href="#">Item 4</a></li>
+                  <li><a href="#">Item 5</a></li>
+                </ul>
+              </section>
+            </div>
+            <div class="col">
+              <section>
+                <h2>Featured 2</h2>
+                <ul class="mega-links">
+                  <li><a href="#">Item 1</a></li>
+                  <li><a href="#">Item 2</a></li>
+                  <li><a href="#">Item 3</a></li>
+                  <li><a href="#">Item 4</a></li>
+                  <li><a href="#">Item 5</a></li>
+                </ul>
+              </section>
+            </div>
+            <div class="col">
+              <section>
+                <h2>Featured 3</h2>
+                <ul class="mega-links">
+                  <li><a href="#">Item 1</a></li>
+                  <li><a href="#">Item 2</a></li>
+                  <li><a href="#">Item 3</a></li>
+                  <li><a href="#">Item 4</a></li>
+                  <li><a href="#">Item 5</a></li>
+                </ul>
+              </section>
+            </div>
+            <div class="col">
+              <section>
+                <h2>Featured 4</h2>
+                <ul class="mega-links">
+                  <li><a href="#">Item 1</a></li>
+                  <li><a href="#">Item 2</a></li>
+                  <li><a href="#">Item 3</a></li>
+                  <li><a href="#">Item 4</a></li>
+                  <li><a href="#">Item 5</a></li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="womens.html" class="menu-item expand-btn hide-second">Womens</a>
+        <a href="#" class="menu-item expand-btn hide-first">Womens</a>
+        <div class="mega-menu expandable">
+          <div class="content">
+            <div class="col">
+              <section>
+                <h2>Featured 1</h2>
+                <ul class="mega-links">
+                  <li><a href="#">Item 1</a></li>
+                  <li><a href="#">Item 2</a></li>
+                  <li><a href="#">Item 3</a></li>
+                  <li><a href="#">Item 4</a></li>
+                  <li><a href="#">Item 5</a></li>
+                </ul>
+              </section>
+            </div>
+            <div class="col">
+              <section>
+                <h2>Featured 2</h2>
+                <ul class="mega-links">
+                  <li><a href="#">Item 1</a></li>
+                  <li><a href="#">Item 2</a></li>
+                  <li><a href="#">Item 3</a></li>
+                  <li><a href="#">Item 4</a></li>
+                  <li><a href="#">Item 5</a></li>
+                </ul>
+              </section>
+            </div>
+            <div class="col">
+              <section>
+                <h2>Featured 3</h2>
+                <ul class="mega-links">
+                  <li><a href="#">Item 1</a></li>
+                  <li><a href="#">Item 2</a></li>
+                  <li><a href="#">Item 3</a></li>
+                  <li><a href="#">Item 4</a></li>
+                  <li><a href="#">Item 5</a></li>
+                </ul>
+              </section>
+            </div>
+            <div class="col">
+              <section>
+                <h2>Featured 4</h2>
+                <ul class="mega-links">
+                  <li><a href="#">Item 1</a></li>
+                  <li><a href="#">Item 2</a></li>
+                  <li><a href="#">Item 3</a></li>
+                  <li><a href="#">Item 4</a></li>
+                  <li><a href="#">Item 5</a></li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="kids.html" class="menu-item expand-btn hide-second">Kids</a>
+        <a href="#" class="menu-item expand-btn hide-first">Kids</a>  
+        <div class="mega-menu expandable">
+          <div class="content">
+            <div class="col">
+              <section>
+                <h2>Featured 1</h2>
+                <ul class="mega-links">
+                  <li><a href="#">Item 1</a></li>
+                  <li><a href="#">Item 2</a></li>
+                  <li><a href="#">Item 3</a></li>
+                  <li><a href="#">Item 4</a></li>
+                  <li><a href="#">Item 5</a></li>
+                </ul>
+              </section>
+            </div>
+            <div class="col">
+              <section>
+                <h2>Featured 2</h2>
+                <ul class="mega-links">
+                  <li><a href="#">Item 1</a></li>
+                  <li><a href="#">Item 2</a></li>
+                  <li><a href="#">Item 3</a></li>
+                  <li><a href="#">Item 4</a></li>
+                  <li><a href="#">Item 5</a></li>
+                </ul>
+              </section>
+            </div>
+            <div class="col">
+              <section>
+                <h2>Featured 3</h2>
+                <ul class="mega-links">
+                  <li><a href="#">Item 1</a></li>
+                  <li><a href="#">Item 2</a></li>
+                  <li><a href="#">Item 3</a></li>
+                  <li><a href="#">Item 4</a></li>
+                  <li><a href="#">Item 5</a></li>
+                </ul>
+              </section>
+            </div>
+            <div class="col">
+              <section>
+                <h2>Featured 4</h2>
+                <ul class="mega-links">
+                  <li><a href="#">Item 1</a></li>
+                  <li><a href="#">Item 2</a></li>
+                  <li><a href="#">Item 3</a></li>
+                  <li><a href="#">Item 4</a></li>
+                  <li><a href="#">Item 5</a></li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="menu-item expand-btn">Account</a>
+        <ul class="dropdown-menu expandable">
+          <li><a href="account.html" class="menu-item">My Account</a></li>
+          <li><a href="cart.html" class="menu-item">My Cart</a></li>
+          <li><a href="wish_list.html" class="menu-item">My Wishlist</a></li>
+          <li><a href="order-history.html" class="menu-item">My Orders</a></li>
+          <li><a href="reviews.html" class="menu-item">My Reviews</a></li>
+        </ul>
+      </li>
+      <li><a href="login-form.html" class="menu-item">Sign in</a></li>
+    </ul>
+</nav>
+
+    <div class="wrapper" style="margin-top:10rem;">
+        <div class="title">
+          Sign In Here
+        </div>
+        <div class="container">
+      
+        <div class="form">
+           <div class="inputfield">
+              <label>Username</label>
+              <input type="text" class="input">
+           </div>  
+           <div class="inputfield">
+              <label>Password</label>
+              <input type="password" class="input">
+           </div>  
+          <div class="inputfield">
+            <input type="submit" value="Sign In" class="button">
+          </div>
+          <br>
+          <p style="color:powderblue;"> <strong>or</strong> </p> 
+          <div class="inputfield">
+            <a href="sign-up.html"><input type="submit"value="Sign Up Here"  class="button"></a>
+        </div>
+          </div>
+          </div>
+    </div>
+    
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <!-- Custom Script -->
+  <script src="./js/index.js"></script>
+  
+</body>
+</html>

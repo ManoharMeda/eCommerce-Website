@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+
+    <!-- Box icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>My Reviews</title>
+</head>
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Add a gray background color with some padding */
+    body {
+      font-family: Arial;
+      /* padding: 20px; */
+      /* background-color: ; */
+    }
+
+    main{
+        padding:0px;
+    }
+    .main{
+        margin-top: 9rem;
+        
+    }
+    /* Header/Blog Title */
+    
+    /* Create two unequal columns that floats next to each other */
+    /* Left column */
+    .leftcolumn {   
+      float: left;
+      width: 100%;
+    }
+    
+    /* Right column */
+    .rightcolumn {
+      float: left;
+      width: 25%;
+      padding-left: 20px;
+    }
+    
+    /* Fake image */
+    
+    h2{
+      /* margin-left: 2rem;   */
+      margin-top: 2rem;
+    }
+    /* Add a card effect for articles */
+    .card {
+      border-radius:2rem;
+       background-color: #cdcdcd;
+       padding: 20px;
+       margin: 20px;
+       margin-left: 0;
+       box-shadow: 0 0 30px -14px black;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+  
+    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 800px) {
+      .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+      }
+    }
+    </style>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+      <a href="index.html" class="logo">LOGO</a>
+      <div class="menu-btn">
+        <div class="menu-btn__lines"></div>
+      </div>
+      <ul id="menu-items" class="menu-items hideTemp">
+        <li><a href="index.html" class="menu-item">Home</a></li>
+        <li>
+          <a href="mens.html" class="menu-item expand-btn hide-second">Mens</a>
+          <a href="#" class="menu-item expand-btn hide-first">Mens</a>
+          <div class="mega-menu expandable">
+            <div class="content">
+              <div class="col">
+                <section>
+                  <h2>Featured 1</h2>
+                  <ul class="mega-links">
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                    <li><a href="#">Item 5</a></li>
+                  </ul>
+                </section>
+              </div>
+              <div class="col">
+                <section>
+                  <h2>Featured 2</h2>
+                  <ul class="mega-links">
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                    <li><a href="#">Item 5</a></li>
+                  </ul>
+                </section>
+              </div>
+              <div class="col">
+                <section>
+                  <h2>Featured 3</h2>
+                  <ul class="mega-links">
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                    <li><a href="#">Item 5</a></li>
+                  </ul>
+                </section>
+              </div>
+              <div class="col">
+                <section>
+                  <h2>Featured 4</h2>
+                  <ul class="mega-links">
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                    <li><a href="#">Item 5</a></li>
+                  </ul>
+                </section>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="womens.html" class="menu-item expand-btn hide-second">Womens</a>
+          <a href="#" class="menu-item expand-btn hide-first">Womens</a>
+          <div class="mega-menu expandable">
+            <div class="content">
+              <div class="col">
+                <section>
+                  <h2>Featured 1</h2>
+                  <ul class="mega-links">
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                    <li><a href="#">Item 5</a></li>
+                  </ul>
+                </section>
+              </div>
+              <div class="col">
+                <section>
+                  <h2>Featured 2</h2>
+                  <ul class="mega-links">
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                    <li><a href="#">Item 5</a></li>
+                  </ul>
+                </section>
+              </div>
+              <div class="col">
+                <section>
+                  <h2>Featured 3</h2>
+                  <ul class="mega-links">
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                    <li><a href="#">Item 5</a></li>
+                  </ul>
+                </section>
+              </div>
+              <div class="col">
+                <section>
+                  <h2>Featured 4</h2>
+                  <ul class="mega-links">
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                    <li><a href="#">Item 5</a></li>
+                  </ul>
+                </section>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="kids.html" class="menu-item expand-btn hide-second">Kids</a>
+          <a href="#" class="menu-item expand-btn hide-first">Kids</a>  
+          <div class="mega-menu expandable">
+            <div class="content">
+              <div class="col">
+                <section>
+                  <h2>Featured 1</h2>
+                  <ul class="mega-links">
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                    <li><a href="#">Item 5</a></li>
+                  </ul>
+                </section>
+              </div>
+              <div class="col">
+                <section>
+                  <h2>Featured 2</h2>
+                  <ul class="mega-links">
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                    <li><a href="#">Item 5</a></li>
+                  </ul>
+                </section>
+              </div>
+              <div class="col">
+                <section>
+                  <h2>Featured 3</h2>
+                  <ul class="mega-links">
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                    <li><a href="#">Item 5</a></li>
+                  </ul>
+                </section>
+              </div>
+              <div class="col">
+                <section>
+                  <h2>Featured 4</h2>
+                  <ul class="mega-links">
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                    <li><a href="#">Item 5</a></li>
+                  </ul>
+                </section>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="menu-item expand-btn">Account</a>
+          <ul class="dropdown-menu expandable">
+            <li><a href="account.html" class="menu-item">My Account</a></li>
+            <li><a href="cart.html" class="menu-item">My Cart</a></li>
+            <li><a href="wish_list.html" class="menu-item">My Wishlist</a></li>
+            <li><a href="order-history.html" class="menu-item">My Orders</a></li>
+            <li><a href="reviews.html" class="menu-item">My Reviews</a></li>
+          </ul>
+        </li>
+        <li><a href="login-form.html" class="menu-item">Sign in</a></li>
+      </ul>
+  </nav>
+
+    <main class="container">
+        <div class="main">
+            <h2>My Reviews</h2>
+            <div class="row">
+            <div class="leftcolumn">
+                <div class="card">
+                <h3 style="margin: 1rem;">Kid's Shoes</h3>
+                
+                <img class = "image-class" width="200" height="200" src="https://i.pinimg.com/originals/a7/48/df/a748df87ed2913dfc28650a4d50874c9.jpg" alt="">
+                <p style="margin: 1rem;">Excellent Product</p>
+                <div style="margin: 1rem;" class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p style="margin: 1rem;" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum iure commodi consequuntur numquam iste ducimus inventore cupiditate, quasi tenetur quisquam?</p>
+                </div>
+                <div class="card">
+                <h3 style="margin: 1rem;">Kid's Jeans</h3>
+                
+                <img class = "image-class"  width="200" height="200" src="https://n1.sdlcdn.com/imgs/a/t/m/Indiana-Kids-Jeans-SDL186370537-1-e6c06.jpg" alt="">
+                <p style="margin: 1rem;">Excellent Product</p>
+                <div style="margin: 1rem;" class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p style="margin: 1rem;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere voluptas quam natus nam ex possimus inventore enim impedit, atque quisquam?</p>
+                </div>
+            </div>
+        </div>
+        <section class="pagination">
+          <div class=" container">
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+              <span>4</span>
+              <span><i class='bx bx-right-arrow-alt'></i></span>
+          </div>
+      </section>
+        
+
+      </main>
+
+
+      <footer id="footer" class="section footer">
+          <div class="container">
+            <div class="footer-container">
+              <div class="footer-center">
+                <h3>Privacy Policy</h3>
+                <a href="#">Lorem, ipsum</a>
+                <a href="#">Lorem, ipsum</a>
+                <a href="#">Lorem, ipsum</a>
+                <a href="#">Lorem, ipsum</a>
+                <a href="#">Lorem, ipsum</a>
+              </div>
+              <div class="footer-center">
+                <h3>Online Support</h3>
+                <a href="#">Lorem, ipsum</a>
+                <a href="#">Lorem, ipsum</a>
+                <a href="#">Lorem, ipsum</a>
+                <a href="#">Lorem, ipsum</a>
+                <a href="#">Lorem, ipsum</a>
+              </div>
+              <div class="footer-center">
+                <h3>Refund</h3>
+                <a href="#">Lorem, ipsumt</a>
+                <a href="#">Lorem, ipsumy</a>
+                <a href="#">Lorem, ipsum</a>
+                <a href="#">Lorem, ipsum</a>
+                <a href="#">Lorem, ipsum</a>
+              </div>
+              <div class="footer-center">
+                <h3 id="contact-us">Contact Us</h3>
+                <div>
+                  <span>
+                    <i class="fas fa-map-marker-alt"></i>
+                  </span>
+                  Lorem, ipsum
+                </div>
+                <div>
+                  <span>
+                    <i class="far fa-envelope"></i>
+                  </span>
+                  Lorem, ipsum
+                </div>
+                <div>
+                  <span>
+                    <i class="fas fa-phone"></i>
+                  </span>
+                  Lorem, ipsum
+                </div>
+                <div>
+                  <span>
+                    <i class="far fa-paper-plane"></i>
+                  </span>
+                  Lorem, ipsum
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </footer>
+        <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <!-- Custom Script -->
+  <script src="./js/index.js"></script>
+  
+        
+</body>
+</html>

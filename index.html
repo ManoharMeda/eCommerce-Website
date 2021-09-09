@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  <!-- Box icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+
+<!-- bootstrap link -->
+
+<!-- bootstrap ends -->
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+  <!-- Custom StyleSheet -->
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/img-anti-zoom.css"/>
+
+  <title> Ecommerce Website</title>
+</head>
+
+<style>
+/* .hide{
+ display: none !important;
+} */
+
+</style>
+
+
+<body>
+  <!-- Header -->
+  <header id="home" class="header">
+    <!-- Navigation -->
+    
+    <nav>
+      <a href="index.html" class="logo">LOGO</a>
+      <div class="menu-btn">
+        <div class="menu-btn__lines"></div>
+      </div>
+      <ul id="menu-items" class="menu-items hideTemp">
+        <li><a href="index.html" class="menu-item">Home</a></li>
+        <li>
+          <a href="mens.html" class="menu-item expand-btn hide-second">Mens</a>
+          <a href="#" class="menu-item expand-btn hide-first">Mens</a>
+          <div class="mega-menu expandable">
+            <div class="content">
+              <div class="col">
+                <section>
+                  <h2>Featured 1</h2>
+                  <ul class="mega-links">
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                    <li><a href="#">Item 5</a></li>
+                  </ul>
+                </section>
+              </div>
+              <div class="col">
+                <section>
+                  <h2>Featured 2</h2>
+                  <ul class="mega-links">
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                    <li><a href="#">Item 5</a></li>
+                  </ul>
+                </section>
+              </div>
+              <div class="col">
+                <section>
+                  <h2>Featured 3</h2>
+                  <ul class="mega-links">
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                    <li><a href="#">Item 5</a></li>
+                  </ul>
+                </section>
+              </div>
+              <div class="col">
+                <section>
+                  <h2>Featured 4</h2>
+                  <ul class="mega-links">
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                    <li><a href="#">Item 5</a></li>
+                  </ul>
+                </section>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="womens.html" class="menu-item expand-btn hide-second">Womens</a>
+          <a href="#" class="menu-item expand-btn hide-first">Womens</a>
+          <div class="mega-menu expandable">
+            <div class="content">
+              <div class="col">
+                <section>
+                  <h2>Featured 1</h2>
+                  <ul class="mega-links">
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                    <li><a href="#">Item 5</a></li>
+                  </ul>
+                </section>
+              </div>
+              <div class="col">
+                <section>
+                  <h2>Featured 2</h2>
+                  <ul class="mega-links">
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                    <li><a href="#">Item 5</a></li>
+                  </ul>
+                </section>
+              </div>
+              <div class="col">
+                <section>
+                  <h2>Featured 3</h2>
+                  <ul class="mega-links">
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                    <li><a href="#">Item 5</a></li>
+                  </ul>
+                </section>
+              </div>
+              <div class="col">
+                <section>
+                  <h2>Featured 4</h2>
+                  <ul class="mega-links">
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                    <li><a href="#">Item 5</a></li>
+                  </ul>
+                </section>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="kids.html" class="menu-item expand-btn hide-second">Kids</a>
+          <a href="#" class="menu-item expand-btn hide-first">Kids</a>  
+          <div class="mega-menu expandable">
+            <div class="content">
+              <div class="col">
+                <section>
+                  <h2>Featured 1</h2>
+                  <ul class="mega-links">
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                    <li><a href="#">Item 5</a></li>
+                  </ul>
+                </section>
+              </div>
+              <div class="col">
+                <section>
+                  <h2>Featured 2</h2>
+                  <ul class="mega-links">
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                    <li><a href="#">Item 5</a></li>
+                  </ul>
+                </section>
+              </div>
+              <div class="col">
+                <section>
+                  <h2>Featured 3</h2>
+                  <ul class="mega-links">
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                    <li><a href="#">Item 5</a></li>
+                  </ul>
+                </section>
+              </div>
+              <div class="col">
+                <section>
+                  <h2>Featured 4</h2>
+                  <ul class="mega-links">
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                    <li><a href="#">Item 5</a></li>
+                  </ul>
+                </section>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="menu-item expand-btn">Account</a>
+          <ul class="dropdown-menu expandable">
+            <li><a href="account.html" class="menu-item">My Account</a></li>
+            <li><a href="cart.html" class="menu-item">My Cart</a></li>
+            <li><a href="wish_list.html" class="menu-item">My Wishlist</a></li>
+            <li><a href="order-history.html" class="menu-item">My Orders</a></li>
+            <li><a href="reviews.html" class="menu-item">My Reviews</a></li>
+          </ul>
+        </li>
+        <li><a href="login-form.html" class="menu-item">Sign in</a></li>
+      </ul>
+  </nav>
+
+
+    
+
+    <!-- Hero -->
+    <img src="http://www.pngall.com/wp-content/uploads/5/Attractive-Model-Man-PNG-Image-HD.png" alt="" class="hero-img" />
+
+    <div class="hero-content">
+      <h2><span class="discount">Welcome! </span style="color: #4D375D"> Shop with us.</h2>
+      <h1>
+        <span syle="color: #A2D0C1">eCommerce</span>
+      </h1>
+      <a class="btn" href="#promotions">shop now!</a>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+
+    <!-- Featured -->
+    <section class="section featured">
+      <div class="title">
+        <h1>New Arrivals</h1>
+      </div>
+
+      <div class="product-center container">
+        <div class="product">
+          <div class="product-header">
+            <img src="https://www.monsoon.co.uk/dw/image/v2/BDLV_PRD/on/demandware.static/-/Sites-monsoon-master-catalog/default/dwcbf379ed/images/large/21_24239889_1.jpg?sw=467&sh=598&sm=cut" alt="">
+            <ul class="icons">
+              <span><i class="bx bx-heart"></i></span>
+              <span><i class="bx bx-shopping-bag"></i></span>
+            
+            </ul>
+          </div>
+          <div class="product-footer">
+            <a href="product_single.html">
+              <h3>Women's Western</h3>
+            </a>
+            <div class="rating">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bx-star"></i>
+            </div>
+            <h4 class="price">$50</h4>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-header">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-410,/pub/media/catalog/product/t/w/twdr013_1.jpg?rnd=20200526195200" alt="">
+            <ul class="icons">
+              <span><i class="bx bx-heart"></i></span>
+              <span><i class="bx bx-shopping-bag"></i></span>
+            
+            </ul>
+          </div>
+          <div class="product-footer">
+            <a href="product_single.html"><h3>Woman's Occasion</h3></a>
+            <div class="rating">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bx-star"></i>
+            </div>
+            <h4 class="price">$50</h4>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-header">
+            <img src="https://rukminim1.flixcart.com/image/300/300/kku1yfk0/t-shirt/l/i/f/xxl-t51-tm-seven-rocks-original-imagy365hhvvfzeb.jpeg?q=90" alt="">
+            <ul class="icons">
+              <span><i class="bx bx-heart"></i></span>
+              <span><i class="bx bx-shopping-bag"></i></span>
+            
+            </ul>
+          </div>
+          <div class="product-footer">
+            <a href="product_single.html"><h3>Men's Casuals</h3></a>
+            <div class="rating">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bx-star"></i>
+            </div>
+            <h4 class="price">$50</h4>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-header">
+            <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/11361160/2020/2/24/6e48c2a4-5d44-48a1-9e89-ef45e60a6a671582535979796-WROGN-Men-Shirts-6061582535978238-1.jpg" alt="">
+
+            <ul class="icons">
+              <span><i class="bx bx-heart"></i></span>
+              <span><i class="bx bx-shopping-bag"></i></span>
+            
+            </ul>
+          </div>
+          <div class="product-footer">
+            <a href="product_single.html"><h3>Men's Top</h3></a>
+            <div class="rating">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bx-star"></i>
+            </div>
+            <h4 class="price">$50</h4>
+          </div>
+        </div>
+        
+      </div>
+      <div id="see-more">
+        <a class="btn" href="new_arrivals.html">See More</a>
+        
+      </div>
+      <!-- <div class="see-more" style="text-align: center;">
+        <button class = "btn" type="submit" >See More</button>
+      </div> -->
+    </section>
+
+    <!--Latest -->
+    <section class="section featured">
+      <div class="title">
+        <h1 id="promotions">Promotions</h1>
+      </div>
+
+      <div class="product-center container">
+        <div class="product">
+          <div class="product-header">
+            <img src="https://martinvalen.com/5975-home_default/men-s-light-blue-jeans-with-rips.jpg" alt="">
+
+            <ul class="icons">
+              <span><i class="bx bx-heart"></i></span>
+              <span><i class="bx bx-shopping-bag"></i></span>
+            
+            </ul>
+          </div>
+          <div class="product-footer">
+            <a href="#"><h3>Men's Light Jeans</h3></a>
+            <div class="rating">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bx-star"></i>
+            </div>
+            <h4 class="price">$50</h4>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-header">
+            <img src="https://cdn.shopify.com/s/files/1/0658/8657/files/hd023mobile_x800.jpg?v=1614835130" alt="">
+
+            <ul class="icons">
+              <span><i class="bx bx-heart"></i></span>
+              <span><i class="bx bx-shopping-bag"></i></span>
+            
+            </ul>
+          </div>
+          <div class="product-footer">
+            <a href="#"><h3>Men's Dark Jeans</h3></a>
+            <div class="rating">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bx-star"></i>
+            </div>
+            <h4 class="price">$50</h4>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-header">
+            <img src="https://assetscdn1.paytm.com/images/catalog/product/A/AP/APPSPYKAR-WOMENSPYK74122367DB7F27/1581607854881_0..jpg" alt="">
+
+            <ul class="icons">
+              <span><i class="bx bx-heart"></i></span>
+              <span><i class="bx bx-shopping-bag"></i></span>
+            
+            </ul>
+          </div>
+          <div class="product-footer">
+            <a href="#"><h3>Women's Light Jeans</h3></a>
+            <div class="rating">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bx-star"></i>
+            </div>
+            <h4 class="price">$50</h4>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-header">
+            <img src="https://5.imimg.com/data5/GY/QN/MY-3241133/zara-women-jeans-500x500.jpeg" alt="">
+
+            <ul class="icons">
+              <span><i class="bx bx-heart"></i></span>
+              <span><i class="bx bx-shopping-bag"></i></span>
+            
+            </ul>
+          </div>
+          <div class="product-footer">
+            <a href="#"><h3>Women's dark Jeans</h3></a>
+            <div class="rating">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bx-star"></i>
+            </div>
+            <h4 class="price">$50</h4>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-header">
+            <img src="https://www.rajwadi.com/image/cache/data/red-navy-kurta-pajama-for-men-27409-800x1100.jpg" alt="">
+
+            <ul class="icons">
+              <span><i class="bx bx-heart"></i></span>
+              <span><i class="bx bx-shopping-bag"></i></span>
+            
+            </ul>
+          </div>
+          <div class="product-footer">
+            <a href="#"><h3>Men's ethnic hybrid</h3></a>
+            <div class="rating">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bx-star"></i>
+            </div>
+            <h4 class="price">$50</h4>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-header">
+            <img src="https://static3.azafashions.com/tr:w-450/uploads/product_gallery/1606806_2-0232120001613739718.jpg" alt="">
+
+            <ul class="icons">
+              <span><i class="bx bx-heart"></i></span>
+              <span><i class="bx bx-shopping-bag"></i></span>
+            
+            </ul>
+          </div>
+          <div class="product-footer">
+            <a href="#"><h3>Men's Traditional</h3></a>
+            <div class="rating">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bx-star"></i>
+            </div>
+            <h4 class="price">$50</h4>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-header">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/61EgQx2C0PL._UL1500_.jpg" alt="">
+
+            <ul class="icons">
+              <span><i class="bx bx-heart"></i></span>
+              <span><i class="bx bx-shopping-bag"></i></span>
+            
+            </ul>
+          </div>
+          <div class="product-footer">
+            <a href="#"><h3>Woman's Traditional</h3></a>
+            <div class="rating">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bx-star"></i>
+            </div>
+            <h4 class="price">$50</h4>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-header">
+            <img src="https://assets.myntassets.com/fl_progressive/h_960,q_80,w_720/v1/assets/images/2147883/2017/11/7/11510046595699-Jaipur-Kurti-Women-Navy-Blue-Printed-Kurta-with-Trousers-8001510046595392-1.jpg" alt="">
+
+            <ul class="icons">
+              <span><i class="bx bx-heart"></i></span>
+              <span><i class="bx bx-shopping-bag"></i></span>
+            
+            </ul>
+          </div>
+          <div class="product-footer">
+            <a href="#"><h3>Boy’s T-Shirt</h3></a>
+            <div class="rating">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bx-star"></i>
+            </div>
+            <h4 class="price">$50</h4>
+          </div>
+        </div>
+      </div>
+      <div id="see-more">
+        <a class="btn" href="promotions.html">See More</a>
+        
+      </div>
+    </section>
+
+
+    <!-- promotion of the day begins-->
+    <section class="discount">
+      <div class="container">
+        <div class="row">
+                <div class="discount-text discount-text-title">
+                  <span>Discount</span>
+                  <h2>Summer 2020</h2>
+                  <h5><span>Sale </span> 60% OFF</h5>
+                  <p id="demo"></p>
+                  <a href="#">Buy Now</a>
+              </div>
+        </div>
+      </div>
+    </section>
+    <!-- promotion of the day ends-->
+
+
+    <!-- Newsletter begins -->
+    <section class="newsletter-area">
+      <div class="container">
+        <form action="#" method="POST">
+          <p class="newsletter-text">
+            Subscribe to our newsletter.
+          </p>
+          <div class="row subscribe-sec">
+              <input type="email" class="email" name="email" placeholder="Enter Your Email" required>
+              <button type="submit" class="btn submit">Subscribe</button>           
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Newsletter ends --> 
+  </main> 
+
+  <!-- Footer -->
+  <footer id="footer" class="section footer">
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-center">
+          <h3>Privacy Policy</h3>
+          <a href="#">Lorem, ipsum</a>
+          <a href="#">Lorem, ipsum</a>
+          <a href="#">Lorem, ipsum</a>
+          <a href="#">Lorem, ipsum</a>
+          <a href="#">Lorem, ipsum</a>
+        </div>
+        <div class="footer-center">
+          <h3>Online Support</h3>
+          <a href="#">Lorem, ipsum</a>
+          <a href="#">Lorem, ipsum</a>
+          <a href="#">Lorem, ipsum</a>
+          <a href="#">Lorem, ipsum</a>
+          <a href="#">Lorem, ipsum</a>
+        </div>
+        <div class="footer-center">
+          <h3>Refund</h3>
+          <a href="#">Lorem, ipsumt</a>
+          <a href="#">Lorem, ipsumy</a>
+          <a href="#">Lorem, ipsum</a>
+          <a href="#">Lorem, ipsum</a>
+          <a href="#">Lorem, ipsum</a>
+        </div>
+        <div class="footer-center">
+          <h3 id="contact-us">Contact Us</h3>
+          <div>
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+            </span>
+            Lorem, ipsum
+          </div>
+          <div>
+            <span>
+              <i class="far fa-envelope"></i>
+            </span>
+            Lorem, ipsum
+          </div>
+          <div>
+            <span>
+              <i class="fas fa-phone"></i>
+            </span>
+            Lorem, ipsum
+          </div>
+          <div>
+            <span>
+              <i class="far fa-paper-plane"></i>
+            </span>
+            Lorem, ipsum
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <!-- Custom Script -->
+  <script src="./js/index.js"></script>
+  
+</body>
+
+</html>

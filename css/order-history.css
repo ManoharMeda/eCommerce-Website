@@ -1,0 +1,118 @@
+.order-history-container{
+    height: 150rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* background-color: gray; */
+}
+.orders{
+    height: 140rem;
+    width: 100rem;
+    background-color: white;
+    margin: 1rem;
+    border-radius: 1%;
+    display: grid;
+    grid-template-rows: 1fr 20fr;
+    justify-items: center;
+}
+.orders h1{
+    position: relative;
+    left: 5rem;
+    top: 3rem;
+    /* background-color: tomato; */
+    height: auto;
+    width: auto;
+    justify-self: left;
+}
+.orders-bundle{
+    /* background-color: teal; */
+    border-radius: 20px;
+    margin: 4rem;
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    row-gap: 1rem;
+    justify-items: center;
+    align-items: center;
+}
+.order-item{
+    /* background-color: violet; */
+    height: 90%;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0.2rem 0.2rem 0.5rem 0.05rem rgb(93, 93, 93);
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+
+}
+.uppsub{
+    background-color: rgb(246,246,246);
+    height: 8rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr 2fr;
+    column-gap: 1em;
+    border-radius: 10px;
+}
+.uppsubsub{
+    /* background-color: white; */
+    align-self:center;
+    margin: 1rem;
+}
+.uppsubsube{
+    /* background-color: white; */
+    margin: 1rem;
+    justify-self:flex-end;
+    align-self: center;
+}
+.prodesc{
+    /* background-color: teal; */
+    display: grid;
+    grid-template-row: 1fr 4fr;
+    align-items: center;
+}
+.pic{
+    /* background-color: gray; */
+    flex: auto auto 20%;
+    margin-left: 1rem;
+}
+.title{
+    /* background-color: gray; */
+    flex: auto auto auto;
+    margin-left: 3rem;
+    font-weight: 500;
+    font-size: 2rem;
+    color: black;
+    width: 50rem;
+    text-align: left;
+}
+.pic img{
+    width: 14rem;
+    height: auto;
+}
+.delivered-on h3{
+    /* background-color: green; */
+    font-weight: 700;
+    font-size: 2rem;
+    margin-left: 1rem;
+
+}
+.subprodesc{
+    display: flex;
+    justify-content: end;
+}
+.outsideinvoice{
+    display: flex;
+}
+.invoice{
+    /* background-color: gray; */
+    width: 100px;
+    height: 100px;
+}
+.invoice button{
+    position: relative;
+    left: 5rem;
+    top: 2rem ;
+    height: 4rem;
+    width: 10rem;
+}
