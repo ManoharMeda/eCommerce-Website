@@ -1,1 +1,1 @@
-# Responsive Ecommerce Website
+# Responsive eCommerce Website
